@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todo_list_fragment">
+
+    <fragment
+        android:id="@+id/todo_list_fragment"
+        android:name="com.example.testdatabase.TodoListFragment"
+        android:label="LineUp"
+        tools:layout="@layout/fragment_todo_list_fragment">
+
+        <action
+            android:id="@+id/action_todo_list_fragment_to_input_todos"
+            app:destination="@id/input_todos"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_todo_list_fragment_to_detail2"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/input_todos"
+        android:name="com.example.testdatabase.InputTodos"
+        android:label="Input"
+        tools:layout="@layout/fragment_input_todos">
+        <action
+            android:id="@+id/action_input_todos_to_todo_list_fragment"
+            app:destination="@id/todo_list_fragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.testdatabase.detail"
+        android:label="Back"
+        tools:layout="@layout/fragment_detail"></fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.testdatabase.aboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+</navigation>
