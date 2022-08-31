@@ -1,8 +1,8 @@
 # LineUpApp
 
 • Created a Daily Task Manager.  <br />
-• Integrated Room Persistence Library. and used Android Clock API.  <br />
-• Used Coroutines, Navigation Component, animations.  <br />
+• Integrated **Room Persistence Library** and used Android Clock API.  <br />
+• Used **Coroutines**, **Navigation Component**, animations.  <br />
 
 # Demo
 https://user-images.githubusercontent.com/77627439/148071087-1c331712-4185-4973-b566-bb8b134fea0f.mp4
